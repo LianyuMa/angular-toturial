@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Angular.JS</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="icon" href="style/ma.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Angular<a target="_blank" href="https://angularjs.org/">.JS</a></h1>
+        <div class="slogan">HTML enhanced for web apps!</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="data_binding.html">Data Binding</a></li>
+          <li class="current"><a href="filter.html">Filter</a></li>
+          <li><a href="directive.html">Directive</a></li>
+          <li><a href="ui_integration.html">UI Integration</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <script type="text/javascript">var clocksize='200';</script>
+          <script src="http://gheos.net/js/clock.js"></script>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <div class="tagBall">
+            <a class="tag" target="_blank" href="index.html">Home</a>
+            <a class="tag" target="_blank" href="data_binding.html">Data Binding</a>
+            <a class="tag" target="_blank" href="filter.html">Filter</a>
+            <a class="tag" target="_blank" href="directive.html">Directive</a>
+            <a class="tag" target="_blank" href="ui_integration.html">UI Integration</a>
+            <a class="tag" target="_blank" href="http://angularjs.org">Angular</a>
+            <a class="tag" target="_blank" href="http://angular-ui.github.io/bootstrap/">Bootstrap</a>
+            <a class="tag" target="_blank" href="http://famo.us/">famo.us</a>
+            <a class="tag" target="_blank" href="http://mean.io/#!/">MEAN stack</a>
+            <a class="tag" target="_blank" href="http://nodejs.org/">node.js</a>
+            <a class="tag" target="_blank" href="http://expressjs.com/">Express.js</a>
+            <a class="tag" target="_blank" href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a>
+            <a class="tag" target="_blank" href="http://www.mongodb.org/">Mongo DB</a>
+          </div>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <h3>Notable directives</h3>
+        <h4>ng-repeate</h4>
+        <p>The ngRepeat directive instantiates a template once per item from a collection. Each template instance gets its own scope, where the given loop variable is set to the current collection item, and $index is set to the item index or key.</p>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Filters</h1>
+        <p>A filter formats the value of an expression for display to the user. They can be used in view templates, controllers or services and it is easy to define your own filter.You can also use filters in controllers, services, and directives. For this, inject a dependency with the name &lt;filterName&gt;Filter to your controller/service/directive.</p>
+        <h1>build-in filters</h1>
+        <h2>number</h2>
+        <p><b>Formats a number as text.If the input is not a number an empty string is returned.</b></p>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/x242Z/2/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>date</h2>
+        <p><b>Formats date to a string based on the requested format.</b></p>
+        <iframe width="628" height="300" src="http://jsfiddle.net/y96hF/10/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>currency</h2>
+        <p><b>Formats a number as a currency (ie $1,234.56). When no currency symbol is provided, default symbol for current locale is used.</b></p>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/QF7QC/1/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>Json</h2>
+        <p><b>Allows you to convert a JavaScript object into JSON string.This filter is mostly useful for debugging.</b></p>
+        <ul>
+          <li><h4>JSON Example</h4><b>{"employees":[{"firstName":"John", "lastName":"Doe"},{"firstName":"Anna", "lastName":"Smith"},{"firstName":"Peter", "lastName":"Jones"}]}</b></li>
+        </ul>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/8QkQC/15/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>limitTo</h2>
+        <p><b>Creates a new array or string containing only a specified number of elements. The elements are taken from either the beginning or the end of the source array or string, as specified by the value and sign (positive or negative) of limit.</b></p>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/66J2F/1/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>orderBy</h2>
+        <p><b>Orders a specified array by the expression predicate. It is ordered alphabetically for strings and numerically for numbers. Note: if you notice numbers are not being sorted correctly, make sure they are actually being saved as numbers and not strings.</b></p>
+        <iframe width="628" height="300" src="http://jsfiddle.net/8ouk7ydj/1/embedded/" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; <a target="_blank" href="http://lianyuma.com">LianyuMa</a> | <a target="_blank" href="http://w4931513.gblearn.com/">GBLearn</a> | <a href="#">Top</a> | <a href="index.html">Homepage</a></p>
+      <div id="validation">
+      <!-- CSS Validation -->
+        <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+          </a>
+
+        <!-- HTML Validation -->
+        <script > //<!--[CDATA[
+          document.write ("<a href='http://validator.w3.org/check?uri=" +
+          location.href+ "\;ss=1;verbose=1' target='display'>" +
+          "<img src='http://gblearn.com/courses/wp-content/uploads/2014/01/HTML5_Logo_2561.png' " +
+          "width='50' height='50' border='0' " +
+          "alt='Valid HTML5.' " +
+          "title='Valid HTML5' /></a>")
+          dt=new Date(document.lastModified);
+          document.write("<small>This page was last modified on " +
+          dt.toLocaleString() + "</small>")
+        //]]--> </script>
+    </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/tagball.js"></script>
+</body>
+</html>

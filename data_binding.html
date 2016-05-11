@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Angular.JS</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link rel="icon" href="style/ma.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Angular<a target="_blank" href="https://angularjs.org/">.JS</a></h1>
+        <div class="slogan">HTML enhanced for web apps!</div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="current"><a href="data_binding.html">Data Binding</a></li>
+          <li><a href="filter.html">Filter</a></li>
+          <li><a href="directive.html">Directive</a></li>
+          <li><a href="ui_integration.html">UI Integration</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <script type="text/javascript">var clocksize='200';</script>
+          <script src="http://gheos.net/js/clock.js"></script>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <div class="tagBall">
+            <a class="tag" target="_blank" href="index.html">Home</a>
+            <a class="tag" target="_blank" href="data_binding.html">Data Binding</a>
+            <a class="tag" target="_blank" href="filter.html">Filter</a>
+            <a class="tag" target="_blank" href="directive.html">Directive</a>
+            <a class="tag" target="_blank" href="ui_integration.html">UI Integration</a>
+            <a class="tag" target="_blank" href="http://angularjs.org">Angular</a>
+            <a class="tag" target="_blank" href="http://angular-ui.github.io/bootstrap/">Bootstrap</a>
+            <a class="tag" target="_blank" href="http://famo.us/">famo.us</a>
+            <a class="tag" target="_blank" href="http://mean.io/#!/">MEAN stack</a>
+            <a class="tag" target="_blank" href="http://nodejs.org/">node.js</a>
+            <a class="tag" target="_blank" href="http://expressjs.com/">Express.js</a>
+            <a class="tag" target="_blank" href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC</a>
+            <a class="tag" target="_blank" href="http://www.mongodb.org/">Mongo DB</a>
+          </div>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>a basic "Hello world"</h3>
+        <h2>Notable directives</h2>
+        <ul>
+          <li><h4>Scopes</h4><b>scope is an object that refers to the application model. It is an execution context for expressions. Scopes are arranged in hierarchical structure which mimic the DOM structure of the application. Scopes can watch expressions and propagate events.</b></li>
+        </ul>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Two-way Data Binding</h1>
+        <p><b>AngularJS' two-way data binding is its most notable feature and reduces the amount of code written by relieving the server backend from templating responsibilities. Instead, templates are rendered in plain HTML according to data contained in a scope defined in the model.</b></p>
+        <h2>a basic "Hello world"</h2>
+        <ul>
+          <li><h4>ng-app</h4><b>Use this directive to auto-bootstrap an AngularJS application. The ngApp directive designates the root element of the application and is typically placed near the root element of the page - e.g. on the &lt;body&gt; or &lt;html&gt; tags.</b></li>
+          <li><h4>ng-model</h4><b>will try to bind to the property given by evaluating the expression on the current scope. If the property doesn't already exist on this scope, it will be created implicitly and added to the scope.</b></li>
+        </ul>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/cbWLK/1/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>Calculagraph</h2>
+        <ul>
+          <li><h4>angular.module</h4><b>The angular.module is a global place for creating, registering and retrieving Angular modules. All modules (angular core or 3rd party) that should be available to an application must be registered using this mechanism.</b></li>
+          <li><h4>ng-controller</h4><b>The ngController directive attaches a controller class to the view. This is a key aspect of how angular supports the principles behind the Model-View-Controller design pattern.</b></li>
+        </ul>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/m738L/22/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>Clock</h2>
+        <ul>
+          <li><h4>$apply</h4><b>$apply() is used to execute an expression in angular from outside of the angular framework. (For example from browser DOM events, setTimeout, XHR or third party libraries). Because we are calling into the angular framework we need to perform proper scope life cycle of exception handling, executing watches.</b></li>
+        </ul>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/Kr9ZD/3/embedded/" allowfullscreen="allowfullscreen"></iframe>
+        <h2>Adding machine</h2>
+        <iframe width="628" height="300" src="http://jsfiddle.net/AlexMa/qhN96/2/embedded/" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Copyright &copy; <a target="_blank" href="http://lianyuma.com">LianyuMa</a> | <a target="_blank" href="http://w4931513.gblearn.com/">GBLearn</a> | <a href="#">Top</a> | <a href="index.html">Homepage</a></p>
+      <div id="validation">
+      <!-- CSS Validation -->
+        <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!" />
+          </a>
+
+        <!-- HTML Validation -->
+        <script > //<!--[CDATA[
+          document.write ("<a href='http://validator.w3.org/check?uri=" +
+          location.href+ "\;ss=1;verbose=1' target='display'>" +
+          "<img src='http://gblearn.com/courses/wp-content/uploads/2014/01/HTML5_Logo_2561.png' " +
+          "width='50' height='50' border='0' " +
+          "alt='Valid HTML5.' " +
+          "title='Valid HTML5' /></a>")
+          dt=new Date(document.lastModified);
+          document.write("<small>This page was last modified on " +
+          dt.toLocaleString() + "</small>")
+        //]]--> </script>
+    </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/tagball.js"></script>
+</body>
+</html>
